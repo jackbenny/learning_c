@@ -1,6 +1,10 @@
 #include <stdio.h>
 
-float max(float x, float y)
+/* A first example from the book "Vägen till C" where we get to use functions.
+ * Here is a function to get the biggest number from a set of numbers.
+ */
+
+float max(float x, float y) // It's return value is a float.
 {
     if (x > y)
     {
@@ -12,7 +16,7 @@ float max(float x, float y)
     }
 }
 
-int main()
+int main() // main's return value is an int (return 0 at the bottom).
 {
     float number, sum, biggest;
     int ant;
@@ -26,7 +30,7 @@ int main()
     {
         ant++;
         sum += number;
-        biggest = max(biggest, number);
+        biggest = max(biggest, number); // biggest goes into x, number into y.
     }
 
     printf("Average:    %.2f\n", sum / ant);

@@ -1,5 +1,7 @@
 #include <stdio.h>
-#define YEARS 10
+#define YEARS 15
+
+/* Simple example of a program to calculate interest on interest */
 
 int main()
 {
@@ -7,7 +9,7 @@ int main()
     int year;
     printf("Invested capial: "); scanf("%f", &cap);
     printf("Interest? "); scanf("%f", &interest);
-    printf("\n Year     Holding\n ====      =======\n");
+    printf("\n Year      Holding\n ====      =======\n");
 
     for (year = 1; year <= YEARS; year++)
     {
